@@ -1,3 +1,11 @@
+.row {
+    background-color: #add8e6;
+}
+
+.navbar {
+    background-color: #add8e6;
+}
+
 .container{
     display: flex;
     justify-content: space-between;

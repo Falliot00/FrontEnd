@@ -20,6 +20,14 @@ div{
     align-items: center;
 }
 
+h1{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*estilo de la foto de perfil*/
 /*@media (max-width: 2560px){*/
     #fotoDePerfil{

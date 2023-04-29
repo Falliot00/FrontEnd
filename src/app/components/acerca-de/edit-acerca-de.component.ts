@@ -36,7 +36,7 @@ export class EditAcercaDeComponent implements OnInit {
       data => {
         this.router.navigate(['']);
       }, err => {
-        alert("Error al modificar la imagen");
+        alert("Error al modificar la persona");
         this.router.navigate(['']);
       }
     )

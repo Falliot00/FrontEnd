@@ -1,8 +1,62 @@
 <div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	  <!-- INICIO TITULO -->
+	  <h1>Hard & Soft skills</h1>
+	  <!-- FIN TITULO -->
+
+	  <!-- INICIO BOTON AGREGAR -->
+	  <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Agregar skill</button>
+	  <!-- FIN BOTON AGREGAR -->
+	</div>
+	
+  
+	<!-- INICIO LISTA -->
+	<div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-2 --circulo" *ngFor="let skill of skill">
+  
+	  <!-- INICIO DATOS -->
+	  <circle-progress
+		[percent]="(skill.porcentaje)"   
+		[maxPercent]="100"
+		[showUnits]="false"
+		[title]="(skill.nombre)"
+		[showSubtitle]="false"
+		[titleColor]="'#212F3C'"
+		[titleFontSize]="'15px'"
+		[titleFontWeight]="'400'"
+		[radius]="80"
+		[outerStrokeWidth]="8"
+		[innerStrokeWidth]="2"
+		[outerStrokeColor]="'#3325fc'"
+		[innerStrokeColor]="'#508bfc'"
+		[animation]="true"
+		[animationDuration]="600">
+		[showTitle]="true"
+		[showImage]="false"
+		[imageHeight]="70" 
+        [imageWidth]="70"
+		[clockwise]="false">
+	  </circle-progress>
+	  <!-- FIN DATOS -->
+  
+	  <!-- INICIO BOTON EDITAR Y BORRAR -->
+	  <div class="float-end" *ngIf="isLogged">
+		<button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+			<i class="bi bi-pencil-fill"></i> EDITAR</button>
+			<button class="btn btn-danger" (click)="delete(skill.id)">
+			<i class="bi bi-trash-fill"></i> BORRAR</button>
+	  </div>
+	  <!-- FIN BOTON EDITAR Y BORRAR -->
+  
+	</div>
+	<!-- FIN LISTA -->
+  </div>
+
+
+<!--<div class="row">
 	<h1>Hard & Soft skills</h1>
 
 	<div class="col-lg-2">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Agregar skill</button>
     </div>
 
     <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
@@ -37,7 +91,7 @@
         </div>
         
     </div>
-	<!--<div class="text-center col-sm-4 col-md-4 col-lg-4">
+	<!==aca van flechita para abrir<div class="text-center col-sm-4 col-md-4 col-lg-4">
 		<circle-progress
 			[percent]="95"
 			[radius]="100"
@@ -144,5 +198,5 @@
 			[animation]="true"
 			[animationDuration]="600"
 		></circle-progress>
-	</div>-->
-</div>
+	</div>aca van flechita para cerrar==>
+</div>-->

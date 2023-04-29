@@ -1,8 +1,13 @@
-.row{
-    background-color: #add8e6;
-}
+/*le saque el .row*/
 
-img{
+/*img{
     width: 100%;
-    height: 500px;
-}
+    height: 400px;
+}*/
+
+img {
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: fixed;
+    border-radius: 40px 40px 0px 0px;
+  } 

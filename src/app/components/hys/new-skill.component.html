@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
@@ -13,6 +13,29 @@
                 <button class="btn btn-primary">
                     Agregar skill
                 </button>
+            </form>
+        </div>
+    </div>
+</div>-->
+
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <!-- Nombre educacion input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="nombre">Nombre de la skill (máximo 255 caracteres)</label>
+                    <input type="text" id="nombre" class="form-control"  name="nombre" [(ngModel)]="nombre" required>
+                </div>
+
+                <!-- Descripcion input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="porcentaje">Porcentaje de la skill (del 0 al 100)</label>
+                    <input type="text" id="porcentaje" class="form-control"  name="porcentaje" [(ngModel)]="porcentaje" required>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Agregar skill</button>
             </form>
         </div>
     </div>

@@ -9,5 +9,12 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 2px -2px 5px #999;
+}
+
+h1{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
 }

@@ -1,4 +1,4 @@
-<div class="container" *ngIf="persona">
+<!--<div class="container" *ngIf="persona">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -13,13 +13,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="descripcion">Descripcion</label>
+                    <label for="descripcion">Descripcion (Maximo 255 caracteres)</label>
                     <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
                 </div>
 
                 <div class="form-group">
                     <label for="img">Imagen</label>
-                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png"> <!--pongo el required?-->
+                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
                 </div>
                 <div class="imagen">
                     <img [src]="imageService.url" width="200px">
@@ -27,8 +27,54 @@
 
                 <br>
                 <button class="btn btn-primary">
-                    Editar educacion
+                    Editar persona
                 </button>
+            </form>
+        </div>
+    </div>
+</div>-->
+
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="nombre">Nombre (máximo 50 caracteres)</label>
+                            <input type="text" id="nombre" class="form-control" name="nombre" [(ngModel)]="persona.nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-outline">
+                            <label class="form-label" for="apellido">Apellido (máximo 50 caracteres)</label>
+                            <input type="text" id="apellido" class="form-control"  name="apellido" [(ngModel)]="persona.apellido" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Descripcion input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="descripcion">Descripción (máximo 255 caracteres)</label>
+                    <input type="text" id="descripcion" class="form-control"  name="descripcion" [(ngModel)]="persona.descripcion" required>
+                </div>
+
+                <!-- Imagen input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="img">Imagen (archivos aceptados: .jpg, .jpeg, .png)</label>
+                    <input type="file" id="img" class="form-control"  name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                
+                <div class="imagen">
+                    <img [src]="imageService.url" width="200px">
+                </div>
+
+                <br>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Editar persona</button>
             </form>
         </div>
     </div>

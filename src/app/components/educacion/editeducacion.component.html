@@ -1,4 +1,4 @@
-<div class="container" *ngIf="educacion">
+<!--<div class="container" *ngIf="educacion">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -13,6 +13,29 @@
                 <button class="btn btn-primary">
                     Editar educacion
                 </button>
+            </form>
+        </div>
+    </div>
+</div>-->
+
+<div class="container" *ngIf="educacion">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <!-- Nombre educacion input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="nombreE">Nombre de la institución (máximo 255 caracteres)</label>
+                    <input type="text" id="nombreE" class="form-control"  name="nombreE" [(ngModel)]="educacion.nombreE" required>
+                </div>
+
+                <!-- Descripcion input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="descripcionE">Descripción de sus estudios (máximo 255 caracteres)</label>
+                    <input type="text" id="descripcionE" class="form-control"  name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Editar educación</button>
             </form>
         </div>
     </div>

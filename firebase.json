@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/proyecto-integrador-alliot-fermin",
+    "public": "dist\\proyecto-integrador-alliot-fermin",
     "ignore": [
       "firebase.json",
       "**/.*",
