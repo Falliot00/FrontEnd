@@ -1,7 +1,7 @@
 .row{
     margin: 0%;
     padding: 20px;
-    background-color: #add8e6;
+    background-color: #ADD9E6;
 }
 
 div{
@@ -22,10 +22,12 @@ div{
 
 h1{
     font-family: 'Alfa Slab One', cursive;
+    /*color: #A349A4;*/
 }
 
 p{
     font-family: 'Open Sans', sans-serif;
+    /*color: #F8F9FA;*/
 }
 
 /*estilo de la foto de perfil*/
