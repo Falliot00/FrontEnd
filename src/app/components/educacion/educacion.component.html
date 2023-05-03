@@ -1,4 +1,4 @@
-<div class="row">
+<!--<div class="row">
     <h1>Educacion</h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
@@ -26,7 +26,7 @@
             </tbody>
         </table>
     </div>
-    <!--<div class="col-lg-1"></div>
+    (flechaIncii)<div class="col-lg-1"></div>
     <div class="col-lg-11">
         <ul>
             <li>
@@ -52,5 +52,45 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti commodi laudantium possimus inventore tempora fugit voluptates voluptatum vero magni repudiandae aspernatur adipisci quo, natus quisquam, doloremque libero nulla reiciendis nobis!
             </p>
         </ul>
-    </div>-->
-</div>
+    </div>(flechaFin)
+</div>-->
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <!-- INICIO TITULO -->
+        <h1>Educacion</h1>
+        <!-- FIN TITULO -->
+  
+      <!-- INICIO BOTON AGREGAR -->
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+             Agregar Educación
+            </button>
+        </div>
+      <!-- FIN BOTON AGREGAR -->
+
+      <br>
+  
+      <!-- INICIO LISTA -->
+      <dl *ngFor="let Educacion of educacion">
+  
+        <!-- INICIO BOTON EDITAR Y BORRAR -->
+        <div class="float-end" *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
+          <button class="btn btn-danger" (click)="delete(Educacion.id)">
+            <i class="bi bi-trash-fill"></i></button>
+        </div>
+        <!-- FIN BOTON EDITAR Y BORRAR --> 
+
+        <!-- INICIO DATOS -->
+        <h2>{{Educacion.nombreE}}</h2>
+        <p>{{Educacion.descripcionE}}</p>
+        <!-- FIN DATOS -->
+  
+      </dl>
+      <!-- FIN LISTA -->
+    </div>
+  </div>
