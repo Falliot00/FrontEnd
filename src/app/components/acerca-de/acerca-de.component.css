@@ -53,7 +53,10 @@ p{
 /*estilo de la foto de perfil*/
 /*@media (max-width: 2560px){*/
     #fotoDePerfil{
-        border-radius: 100%;
+        border-radius: 25%;
+        border: 1.5px solid #9229ac;
+        background-color: #F92899;
+        padding: 1.5px;
         /*box-shadow: 2px 2px 2px #F8F9FA;*/
     }
 /*}*/

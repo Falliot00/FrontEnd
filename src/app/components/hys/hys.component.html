@@ -39,11 +39,11 @@
 	  <!-- FIN DATOS -->
   
 	  <!-- INICIO BOTON EDITAR Y BORRAR -->
-	  <div class="float-end" *ngIf="isLogged">
+	  <div class="float-none" *ngIf="isLogged">
 		<button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-			<i class="bi bi-pencil-fill"></i> EDITAR</button>
+			<i class="bi bi-pencil-fill"></i></button>
 			<button class="btn btn-danger" (click)="delete(skill.id)">
-			<i class="bi bi-trash-fill"></i> BORRAR</button>
+			<i class="bi bi-trash-fill"></i></button>
 	  </div>
 	  <!-- FIN BOTON EDITAR Y BORRAR -->
   

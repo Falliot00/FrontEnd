@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from 'src/app/model/persona.model';
 import { ImageService } from 'src/app/service/image.service';
 import { PersonaService } from 'src/app/service/persona.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-edit-acerca-de',
@@ -34,9 +35,10 @@ export class EditAcercaDeComponent implements OnInit {
     this.persona.img = this.imageService.url
     this.personaService.update(id, this.persona).subscribe(
       data => {
+        this.showSuccess();
         this.router.navigate(['']);
       }, err => {
-        alert("Error al modificar la persona");
+        this.showError();
         this.router.navigate(['']);
       }
     )
@@ -47,5 +49,24 @@ export class EditAcercaDeComponent implements OnInit {
     const name = "perfil_" + id;
     this.imageService.uploadImage($event, name)
 
+  }
+
+  showError(){
+    Swal.fire({
+      icon: 'error',
+      title: '¡Error!',
+      html: 'No pudo modificarse la <b>persona</b>',
+      showConfirmButton: false,
+      timer: 3000
+    })
+  }
+
+  showSuccess(){
+    Swal.fire({
+      icon: 'success',
+      title: '¡Persona modificada!',
+      showConfirmButton: false,
+      timer: 3000
+    })
   }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Skill } from 'src/app/model/skill';
 import { SkillService } from 'src/app/service/skill.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-new-skill',
@@ -21,12 +22,31 @@ export class NewSkillComponent implements OnInit {
     const skill = new Skill(this.nombre, this.porcentaje);
     this.skillS.save(skill).subscribe(
       data => {
-        alert("Skill creada correctamente");
+        this.showSuccess();
         this.router.navigate(['']);
       }, err =>{
-        alert("Fallo al añadir la skill");
+        this.showError();
         this.router.navigate(['']);
       }
     )
+  }
+
+  showError(){
+    Swal.fire({
+      icon: 'error',
+      title: '¡Error!',
+      html: 'No pudo añadirse la <b>skill</b>',
+      showConfirmButton: false,
+      timer: 3000
+    })
+  }
+
+  showSuccess(){
+    Swal.fire({
+      icon: 'success',
+      title: '¡Skill añadida!',
+      showConfirmButton: false,
+      timer: 3000
+    })
   }
 }
