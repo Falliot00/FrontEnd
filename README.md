@@ -215,7 +215,7 @@
   ### Proyecto
   _Título del proyecto_, _descripción_, _imagen_, _URL del repositorio_.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/proyectos.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/proyecto.png" width="600px">
     <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/proyecto-form.png" width="600px">
     <br><sub>Nuevo proyecto</sub>
   </p>
