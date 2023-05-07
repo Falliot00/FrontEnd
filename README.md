@@ -93,7 +93,7 @@
 <!-- DOCUMENTACIÓN -->
   <a name="documentacion"></a>
   ## 📝 Documentación
-  * [Esquema básico sobre el Trabajo Práctico Final Integrador](https://github.com/Falliot00/ArgProg-Portfolio-Frontend/blob/main/archivos_README/Proyecto%20Integrador%20pautas%20y%20objetivos%204ta%20edicion.pdf "Esquema")
+  * [Esquema básico sobre el Trabajo Práctico Final Integrador](https://github.com/Falliot00/portfolio-FrontEnd/blob/main/archivosReadme/Proyecto%20Integrador%20pautas%20y%20objetivos%204ta%20edicion.pdf "Esquema")
 
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
 
@@ -130,7 +130,7 @@
           </ul>
         </td>
         <td>
-          <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/crud.gif" width="200px">
+          <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/crud.gif" width="200px">
         </td>
       </tr>
     </table>
@@ -141,11 +141,11 @@
     <table>
       <tr>
         <td>
-          <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/alert-ok.png" width="400px" align="center">
+          <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/alert-ok.png" width="400px" align="center">
           <p align="center"><sub>Experiencia añadida correctamente</sub></p>
         </td>
         <td>
-          <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/alert-error.png" width="400px" align="center">
+          <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/alert-error.png" width="400px" align="center">
           <p align="center"><sub>¡Error! No pudo añadirse el proyecto</sub></p>
         </td>
       </tr>
@@ -156,7 +156,7 @@
   ### Header
   En la parte superior izquierda se encuentra el _logo de Argentina Programa #YoProgramo_ con su respectivo link al sitio oficial, en la parte superior derecha los _botones de redes sociales_ y _boton de ingresar_ finalizando con un _banner_ a elección.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/navbar.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/navbar.png" width="600px">
     <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/src/assets/bannerInicio.png" width="600px">
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
@@ -164,32 +164,32 @@
   ### Login
   Al dar clic en el _boton de ingresar_ se abre un modal que permite completar usuario y contraseña. Si ambos son correctos **habilita la edición del portfolio** mediante los _botones agregar, editar y borrar_. Además cambia el _boton ingresar_ por el _boton salir_. <br>
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/loginCorrecto.gif" width="300px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/loginCorrecto.gif" width="300px">
   </p>
   
   Si los datos ingresados no son correctos se crea una _alerta informando el error_ y los _botones agregar, editar y borrar_ no se habilitan.
   
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/loginIncorrecto.gif" width="300px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/loginIncorrecto.gif" width="300px">
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
   
   ### Acerca de
   _Foto de perfil_, _nombre y apellido_, _título_ (FullStack...) y una breve _información profesional_ resumida. Todo lo anteriormente nombrado puede **editarse estando logueado**. Una vez realizada la acción se crea una alerta informando si fue correcta o incorrecta.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/acercaDe.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/acercaDe.png" width="600px">
   </p>
   
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/acercaDe-form.png" width=600><br><sub>Editar persona</sub>
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/acercaDe-form.png" width=600><br><sub>Editar persona</sub>
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
   
   ### Experiencia
   _Título del puesto_, _nombre de la empresa o empleador_, _periodo_, breve _descripcion de las actividades realizadas_.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/experiencia.png" width="600px">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/experiencia-form.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/experiencia.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/experiencia-form.png" width="600px">
     <br><sub>Nueva experiencia</sub>
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
@@ -197,8 +197,8 @@
   ### Educación
   _Título de la carrera/curso o estudio_, _nombre de la institución_, _periodo_, breve _descripcion de los temas vistos_.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/educacion.png" width="600px">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/educacion-form.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/educacion.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/educacion-form.png" width="600px">
     <br><sub>Nueva educación</sub>
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
@@ -206,8 +206,8 @@
   ### Skills
   _Nombre de la habilidad_, _porcentaje_.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/skills.png" width="600px">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/skill-form.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/skills.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/skill-form.png" width="600px">
     <br><sub>Nueva habilidad</sub>
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
@@ -215,8 +215,8 @@
   ### Proyecto
   _Título del proyecto_, _descripción_, _imagen_, _URL del repositorio_.
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/proyectos.png" width="600px">
-    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivos_README/proyecto-form.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/proyectos.png" width="600px">
+    <img src="https://raw.githubusercontent.com/Falliot00/portfolio-FrontEnd/main/archivosReadme/proyecto-form.png" width="600px">
     <br><sub>Nuevo proyecto</sub>
   </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
